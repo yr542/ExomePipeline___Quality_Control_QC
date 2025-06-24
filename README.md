@@ -1,4 +1,4 @@
-# Exome Pipeline: Quality Control (QC)
+# Exome Pipeline: Quality Control (QC) Step
 
 This step is optional in the exome pipeline. Quality Control (QC) is performed after the variant filtering step to ensure the integrity and reliability of the variant dataset before downstream analyses. 
 
