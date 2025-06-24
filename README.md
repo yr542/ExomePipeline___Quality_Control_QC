@@ -71,6 +71,6 @@ All intermediate PLINK files and logs are stored in a `cache/` directory for org
 We gratefully acknowledge the contributions of:
 
 - **[Isabelle Schrauwen](https://phoenixmed.arizona.edu/isabelle-schrauwen-phd)** – Principal Investigator of our lab, providing guidance and support.  
-- **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator and original pipeline maintainer who hosted the pipeline in SoS workflow.  
+- **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator who originally developed and hosted the pipeline using SoS workflow, available in [Github Biowork Flows Repository](https://github.com/cumc/bioworkflows).
 - **Hawa Nasiri** – Collaborator who contributed significantly to the development and adaptation of the in-house CUIMC version of the pipeline.  
 - **Yasmin Rajendran** – Contributor to pipeline development, documentation, and creator of the Quality Control GitHub repository.
