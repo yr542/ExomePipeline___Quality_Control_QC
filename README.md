@@ -65,3 +65,12 @@ All intermediate PLINK files and logs are stored in a `cache/` directory for org
 - Update `vcf_prefix`, `input_vcf` and `output_directory` to match your data.
 - Update the `mem` as needed. 
 - Requires a conda environment with `vcftools`, `plink`, and `htslib`.  
+
+## Acknowledgements
+
+We gratefully acknowledge the contributions of:
+
+- **[Isabelle Schrauwen](https://phoenixmed.arizona.edu/isabelle-schrauwen-phd)** – Principal Investigator of our lab, providing guidance and support.  
+- **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator and original pipeline maintainer who hosted the pipeline in SoS workflow.  
+- **Hawa Nasiri** – Collaborator who contributed to pipeline development and optimization.  
+- **Yasmin Rajendran** – Contributor to pipeline development and documentation.
