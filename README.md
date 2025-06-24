@@ -72,5 +72,5 @@ We gratefully acknowledge the contributions of:
 
 - **[Isabelle Schrauwen](https://phoenixmed.arizona.edu/isabelle-schrauwen-phd)** – Principal Investigator of our lab, providing guidance and support.  
 - **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator and original pipeline maintainer who hosted the pipeline in SoS workflow.  
-- **Hawa Nasiri** – Collaborator who contributed to pipeline development and optimization.  
-- **Yasmin Rajendran** – Contributor to pipeline development and documentation.
+- **Hawa Nasiri** – Collaborator who contributed significantly to the development and adaptation of the in-house CUIMC version of the pipeline.  
+- **Yasmin Rajendran** – Contributor to pipeline development, documentation, and creator of the Quality Control GitHub repository.
