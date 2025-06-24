@@ -2,7 +2,24 @@
 
 This step is optional in the exome pipeline.
 
-# VCF Quality Control Pipeline (Post-Variant Filtering)
+# VCF Quality Control Pipeline
+
+Quality Control (QC) is performed after the variant filtering step to ensure the integrity and reliability of the variant dataset before downstream analyses. The quality control is an optional. 
+
+The overall pipeline consists of multiple steps as outlined below:
+
+| Step                     | Description                                                                                   |
+|--------------------------|-----------------------------------------------------------------------------------------------|
+| Step 0: Optional MNP Removal | Filter out Multi-Nucleotide Polymorphism (MNP) sites                                            |
+| Step 1: PreProcessing        | Preprocessing steps including indexing GVCF files and building a sample map for variant calling |
+| Step 2a: Variant Calling (VC)   | Import and merge GVCFs from multiple samples using GenomicsDBImport; perform joint genotyping on the GenomicsDB workspace (For Ensembl, use Step_2a___Part_1___Ensembl_GenomicsDBImport.sh script) |
+| Step 2b: Variant Filtering (VF) | Filter variant calls and select a subset of variants from callset; merge all cohort VCF files into a single VCF file |
+| Step 2c: **Quality Control (QC)** | Perform quality control on merged VCF file and generate quality control metrics              |
+| Step 3: ANNOVAR             | Annotate variants with GnomAD4.0                                                             |
+| Step 4: Mendelian Filtering | Perform Mendelian Filtering on variants                                                      |
+| Step 5: Post Processing  | Perform post processing                                                                      |
+| Step 6: Manual Checks                        | Conduct manual review and verification, typically performed by experts                                     |
+| Step 7: Variant Identification Application   | Uses the [Variant Identification Application Version 2 (VIA V2)](https://github.com/yr542/Variant_Identification_Applicaton___VIA___V2/tree/main); for details, refer to the VIA V2 GitHub repository |
 
 ## Purpose
 After performing variant filtering, **quality control (QC)** is essential to ensure the integrity of your data before proceeding to downstream analyses such as association testing or population structure inference. This script performs several key QC steps on a merged VCF file, including:
@@ -32,15 +49,16 @@ Performing sample-level QC is critical for **minimizing bias**, **controlling fo
 
 The script produces output VCFs and PLINK files containing:
 
-- `.relatedness` and `.relatedness2` – for pairwise relatedness analysis  
-- `.sex` and `.sex2` – for **gender checks**  
+- `.C.2.relatedness2.relatedness2`, `.C.relatedness.relatedness`, `.relatedness2.relatedness2` and `.relatedness.relatedness` – for pairwise relatedness analysis  
+- `2.C.sexcheck.sexcheck`,`sex.secheck` and `sex2.sexcheck` – for gender checks
 - `.IBD.genome` – IBD sharing coefficients  
-- `.HET.het` – **heterozygosity** per individual
+- `.HET.het` – Heterozygosity per individual
 -  Among others
 
 All intermediate PLINK files and logs are stored in a `cache/` directory for organization.
 
 ## Notes
 
-- Update `input_vcf`, `output_directory`, and `vcf_prefix` to match your data.  
+- Update `vcf_prefix`, `input_vcf` and `output_directory` to match your data.
+- Update the `mem` as needed. 
 - Requires a conda environment with `vcftools`, `plink`, and `htslib`.  
