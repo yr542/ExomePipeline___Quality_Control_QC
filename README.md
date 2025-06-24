@@ -2,6 +2,8 @@
 
 This step is optional in the exome pipeline. Quality Control (QC) is performed after the variant filtering step to ensure the integrity and reliability of the variant dataset before downstream analyses. 
 
+## Overview Of Exome Pipeline:
+
 The overall pipeline consists of multiple steps as outlined below:
 
 | Step                     | Description                                                                                   |
@@ -16,6 +18,8 @@ The overall pipeline consists of multiple steps as outlined below:
 | Step 5: Post Processing  | Perform post processing                                                                      |
 | Step 6: Manual Checks                        | Conduct manual review and verification, typically performed by experts                                     |
 | Step 7: Variant Identification Application   | Uses the [Variant Identification Application Version 2 (VIA V2)](https://github.com/yr542/Variant_Identification_Applicaton___VIA___V2/tree/main); for details, refer to the VIA V2 GitHub repository |
+
+We are focusing on the Quality Control (QC) in this repository.
 
 ## Purpose
 After performing variant filtering, **quality control (QC)** is essential to ensure the integrity of your data before proceeding to downstream analyses such as association testing or population structure inference. This script performs several key QC steps on a merged VCF file, including:
