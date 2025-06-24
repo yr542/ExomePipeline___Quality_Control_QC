@@ -45,10 +45,13 @@ Performing sample-level QC is critical for **minimizing bias**, **controlling fo
 
 The script produces output VCFs and PLINK files containing:
 
-- `.C.2.relatedness2.relatedness2`, `.C.relatedness.relatedness`, `.relatedness2.relatedness2` and `.relatedness.relatedness` – for pairwise relatedness analysis  
-- `2.C.sexcheck.sexcheck`,`sex.secheck` and `sex2.sexcheck` – for gender checks
-- `.IBD.genome` – IBD sharing coefficients  
-- `.HET.het` – Heterozygosity per individual
+| Description                   | File Extensions                              |
+|------------------------------|----------------------------------------------|
+| Pairwise relatedness analysis | `.C.2.relatedness2.relatedness2`, `.C.relatedness.relatedness`, `.relatedness2.relatedness2`, `.relatedness.relatedness` |
+| Gender checks                | `2.C.sexcheck.sexcheck`, `sex.sexcheck`, `sex2.sexcheck`               |
+| IBD (Identity By Descent) sharing coefficients | `.IBD.genome`                                |
+| Heterozygosity per individual | `.HET.het`                                  |
+
 -  Among others
 
 All intermediate PLINK files and logs are stored in a `cache/` directory for organization.
