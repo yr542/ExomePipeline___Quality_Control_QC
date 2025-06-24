@@ -1,4 +1,6 @@
-# ExomePipeline___Quality_Control_QC
+# Exome Pipeline: Quality_Control (QC)
+
+This step is optional in the exome pipeline.
 
 # VCF Quality Control Pipeline (Post-Variant Filtering)
 
