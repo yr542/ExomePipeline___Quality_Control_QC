@@ -7,6 +7,7 @@ To execute the script using an Apptainer image, use the following command struct
 To execute the script in the docker pulled as apptainer:
 
 ```bash
+# Your Job Scheduling directives
 my_input_vcf="/path/to/your_file.vcf.bgz"
 output_directory="/path/to/output/directory"
 prefixes="MyBatchPrefix"
