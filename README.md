@@ -78,7 +78,7 @@ We use **Apptainer** to pull this image directly from Docker Hub. The image is p
 We gratefully acknowledge the contributions of:
 
 - **[Isabelle Schrauwen](https://phoenixmed.arizona.edu/isabelle-schrauwen-phd)** – Principal Investigator of our lab, providing guidance and support.  
-- **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator who originally developed and hosted the pipeline using [SoS](https://vatlab.github.io/sos-docs/) workflow, available in the [GitHub Bioworkflows Repository](https://github.com/cumc/bioworkflows).  
+- **[Gao Wang](https://www.neurology.columbia.edu/profile/gao-wang-phd)** – Principal Investigator who originally hosted the pipeline using [SoS](https://vatlab.github.io/sos-docs/) workflow, available in the [GitHub Bioworkflows Repository](https://github.com/cumc/bioworkflows).  
 - **Hawa Nasiri** – Collaborator who contributed significantly to the development and adaptation of the in-house CUIMC version of the pipeline. Hawa also co-led the conversion of the pipeline to Bash and provided edits to the Quality Control components.  
 - **Yasmin Rajendran** – Contributed to pipeline development and documentation; co-led the Bash conversion and led the development of the Nextflow Quality Control module, Docker setup, and repository.
 
