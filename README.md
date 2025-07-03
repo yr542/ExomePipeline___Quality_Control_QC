@@ -66,6 +66,14 @@ All intermediate PLINK files and logs are stored in a `cache/` directory for org
 - Update the `mem` as needed. 
 - Requires a conda environment with `vcftools`, `plink`, and `htslib`.  
 
+## Docker Image
+
+The Apptainer image used in this workflow is publicly available on Docker Hub:  
+[`yr542/exome_pipelines_quality_control_qc`](https://hub.docker.com/r/yr542/exome_pipelines_quality_control_qc)
+
+The image is public and does not require authentication specific to this repository. However, users may need to be authenticated with Docker Hub depending on their system configuration or Docker Hub’s access policies.
+
+
 ## Acknowledgements
 
 We gratefully acknowledge the contributions of:
