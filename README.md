@@ -71,8 +71,7 @@ All intermediate PLINK files and logs are stored in a `cache/` directory for org
 The Apptainer image used in this workflow is publicly available on Docker Hub:  
 [`yr542/exome_pipelines_quality_control_qc`](https://hub.docker.com/r/yr542/exome_pipelines_quality_control_qc)
 
-The image is public and does not require authentication specific to this repository. However, users may need to be authenticated with Docker Hub depending on their system configuration or Docker Hub’s access policies.
-
+We use **Apptainer** to pull this image directly from Docker Hub. The image is public and does not require authentication specific to this repository. However, users may need to authenticate with Docker Hub to avoid pull rate limits or depending on their system configuration.
 
 ## Acknowledgements
 
